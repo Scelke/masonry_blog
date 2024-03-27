@@ -2,7 +2,7 @@ import Masonry from "@/app/_components/Masonry";
 
 const getData = async (page: number, category: string) => {
   const res = await fetch(
-    `http://localhost:3000/api/posts?page=${page}&cat=${category || ""}`,
+    `${process.env.URL}/api/posts?page=${page}&cat=${category || ""}`,
     {
       cache: "no-store",
     }
