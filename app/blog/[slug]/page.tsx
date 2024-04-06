@@ -53,11 +53,11 @@ const blog = async (props: any) => {
                   className="flex flex-col"
                   target="_blank"
                 >
-                  <div className="grow">
+                  <div className="flex grow items-center justify-center">
                     <img
                       src={product.src}
                       alt={product.description}
-                      className="cover h-full"
+                      className="h-[270px] object-cover"
                     />
                   </div>
                   <div className="pb-2 pt-1">{product.description}</div>

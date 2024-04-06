@@ -41,7 +41,7 @@ const Masonry: React.FunctionComponent<MasonryType> = ({ data }) => {
   const distributedData = chunk(data, currentColumns);
 
   return (
-    <div className="m-0 flex w-full justify-center gap-5 overflow-hidden">
+    <div className="m-0 flex w-full justify-center gap-14 overflow-hidden">
       {distributedData?.map(
         (innerArray: any[], rowIndex: React.Key | null | undefined) => (
           <div key={rowIndex}>
